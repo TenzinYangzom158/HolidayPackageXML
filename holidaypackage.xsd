@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Travel">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="User" maxOccurs="unbounded">
+	<xs:complexType>
+	<xs:sequence>
+	<xs:element name="u_id" type="xs:integer"></xs:element>
+	<xs:element name="u_name" type="xs:string"></xs:element>
+	<xs:element name="u_address" type="xs:string"></xs:element>
+	<xs:element name="u_contact" type="Phone"></xs:element>
+	<xs:element name="u_email" type="Email"></xs:element>
+	</xs:sequence>
+	</xs:complexType>	
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:simpleType name="Phone">
+<xs:restriction base="xs:integer">
+<xs:pattern value="([0-9]{10})"></xs:pattern>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="Email">
+<xs:restriction base="xs:string">
+<xs:pattern value="[^@]+@[^\.]+\..+"></xs:pattern>
+</xs:restriction>
+</xs:simpleType>
+
+
+
+</xs:schema>
