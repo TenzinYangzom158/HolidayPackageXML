@@ -3,7 +3,7 @@
 <ChristUniversity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="XMLSchema.xsd">
   <Faculty>
-    <Name>Rithul</Name>
+    <Name>Tenzin</Name>
     <Age>22</Age>
     <Salary>20000</Salary>
   </Faculty>
